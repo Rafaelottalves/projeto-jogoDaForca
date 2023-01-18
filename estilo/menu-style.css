@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+section#bloco-menu {
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1;
+
+    color: white;
+    background-color: rgba(25,25,25,1);
+
+    transition: .3s ease-in-out;
+}
+
+section#bloco-menu:hover {
+    top: 0;
+}
+
+section#bloco-menu h1 {
+    font-size: 3em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    text-shadow: 0px 5px 0px black;
+}
+
+button#btn-começar {
+    width: 140px;
+    height: 40px;
+
+    margin-top: 20px;
+
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+
+    cursor: pointer;
+    border-radius: 5px;
+
+    background-color: rgb(211, 211, 211);
+    box-shadow: 0px 5px 0px black;
+}

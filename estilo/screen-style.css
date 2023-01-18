@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+section#telas {
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+    top: -100vh;
+    left: 0;
+
+    backdrop-filter: blur(3px);
+
+    transition: .5s ease;
+}
+
+div#container-tela {
+    width: 1000px;
+    height: 500px;
+
+    z-index: 2;
+
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 5px;
+    background-color: rgb(187, 187, 187);
+
+    transition: 1s ease;
+}
+
+div#container-tela h2 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+    font-size: 3em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+
+    color: red;
+}
+
+div#container-tela p {
+    margin-bottom: 20px;
+
+    text-align: center;
+    letter-spacing: .5px;
+    font-size: 1.3em;
+
+    color: red;
+}
+
+div#container-tela img {
+    width: 400px;
+    display: block;
+    margin: 0 auto 30px auto;
+}
+
+div#container-tela button {
+    width: 130px;
+    height: 40px;
+
+    display: block;
+    margin: 0 auto;
+
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+
+    border-radius: 5px;
+    cursor: pointer;
+
+    color: rgb(187, 187, 187);
+    background-color: rgb(255, 0, 0);
+}
+
+@keyframes pisca-letra {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes treme-letra {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(6px, 0);
+    }
+
+    50% {
+        transform: translate(-6px, 0);
+    }
+
+    75% {
+        transform: translate(6px, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* ------------------------ */
+
+.container-tela-letra_errada {
+    width: 400px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 30px;
+    right: -400px;
+
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.container-tela-letra_errada p {
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: .8px;
+    text-transform: capitalize;
+    
+    color: rgb(240, 57, 57);
+}
+
+.container-tela-letra_errada img {
+    width:40px;
+
+    margin-left: 5px;
+}
+
+@keyframes aviso-letra_errada {
+    0% {
+        right: -400px;
+    }
+
+    25% {
+        right: 350px;
+    }
+
+    75% {
+        right: 350px;
+    }
+
+    100% {
+        right: -400px;
+    }
+}
+
+.bloco-msg-ultima_chance {
+    width: 100vw;
+    height: 100vh;
+
+    backdrop-filter: blur(3px);
+    position: absolute;
+    top: -100vh;
+    left: 0;
+}
+
+.container-msg {
+    padding: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.container-msg p {
+    font-size: 1.2em;
+    font-weight: bold;
+    
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 1.7em;
+
+    color: rgb(245, 245, 245);
+}
+
+@keyframes aparição {
+    0% {
+        top: -100vh;
+    }
+
+    25% {
+        top: 0;
+    }
+
+    50% {
+        top: 0;
+    }
+
+    75% {
+        top: 0;
+    }
+
+    100% {
+        top: -100vh;
+    }
+}

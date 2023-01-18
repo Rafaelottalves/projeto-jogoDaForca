@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+section#container-game {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgb(15, 15, 15);
+}
+
+div#top {
+    height: 70%;
+
+    display: grid;
+    grid-template-columns: 25% 15% 40% 20%; /* 30% */
+    grid-template-rows: 40% 60%;
+}
+
+div#container-forca{
+    grid-row: 1/3;
+
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+div#container-forca img {
+    width: 250px;
+}
+
+div#container-palavra {
+    max-width: 1300px;
+
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+
+    position: absolute;
+    bottom: 207px;
+    left: 110px;
+}
+
+div#container-palavra input {
+    width: 33px;
+    height: 50px;
+
+    font-size: 35px;
+    text-align: center;
+
+    border: none;
+    border-bottom: 5px solid white;
+
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+div#container-palavra input + input {
+    margin-left: 10px;
+}
+
+div#container-tema{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size:1.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    color: white;
+}
+
+div#container-chute{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+div#container-chute > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div#container-chute > div > p {
+    font-size: 2em;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+
+    color: white;
+}
+
+input#input-chute {
+    width: 50px;
+    height: 55px;
+
+    margin-left: 10px;
+
+    font-size: 1.8em;
+    text-align: center;
+
+    border-radius: 5px;
+    background-color: white;
+}
+
+div#container-timer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div#container-timer div {
+    display: flex;
+}
+
+.tempo {
+    width: 30px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.8em;
+
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+.tempo + .tempo {
+    margin-left: 3px;
+}
+
+div#container-timer p {
+    margin: 0px 3px 0px 3px;
+
+    font-size: 1.8em;
+    color: white;
+}
+
+div#container-boneco {
+    grid-column: 4/5;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+div#container-boneco img {
+    width: 30px;
+}

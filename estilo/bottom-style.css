@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+div#bottom {
+    height: 30%;
+
+    display: grid;
+    grid-template-columns: 32% 33% 32%;
+    grid-template-rows: 100%;
+    gap: 20px;
+}
+
+div#container-btn_volume {
+    position: absolute;
+    bottom: 13px;
+    left: 13px;
+}
+
+div#container-btn_volume i {
+    font-size: 1.3em;
+    cursor: pointer;
+    color: rgba(209, 209, 209, 0.582);
+}
+
+div#container-btn_desistir {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.btn-game {
+    width: 160px;
+    height: 40px;
+
+    font-size: 1.4em;
+
+    border-radius: 5px;
+    cursor: pointer;
+
+    color: black;
+    background-color: rgb(209, 209, 209);
+}
+
+div#container-btn_chutar {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+div#container-letras_erradas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div#container-letras_erradas > div {
+    width: 400px;
+    height: 150px;
+
+    padding: 10px;
+
+    display: flex;
+    font-size: 1.4em;
+
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+div#container-letras_erradas > div > p + p {
+    margin-left: 3px;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./estilo/reset.css">
+    <link rel="stylesheet" href="./estilo/menu-style.css">
+    <link rel="stylesheet" href="./estilo/top-style.css">
+    <link rel="stylesheet" href="./estilo/bottom-style.css">
+    <link rel="stylesheet" href="./estilo/screen-style.css">
+    <title>Forca</title>
+</head>
+<body>
+    <section id="bloco-menu">
+        <h1>Jogo da forca</h1>
+
+        <button id="btn-começar">Começar</button>
+    </section>
+    
+    <section id="container-game">
+        <div id="top">
+            <div id="container-forca">
+                <img id="img-forca" src="./img/forca-01.png" alt="">
+
+                <div id="container-palavra"></div>
+            </div>
+
+            <div id="container-tema"></div>
+
+            <div id="container-chute">
+                <div>
+                    <p>Chutar letra:</p>
+                    <input type="text" id="input-chute" maxlength="1">
+                </div>
+            </div>
+            
+            <div id="container-timer">
+                <div>
+                    <div class="tempo"></div>
+                    <div class="tempo"></div>
+
+                    <p>:</p>
+
+                    <div class="tempo"></div>
+                    <div class="tempo"></div>
+                </div>
+            </div>
+
+            <div id="container-boneco">
+                <img id="img-boneco" src="./img/sprites/sprite-1.png" alt="">
+            </div>
+        </div>
+
+        <div id="bottom">
+            <div id="container-btn_volume">
+                <i class="fa-solid fa-volume-high" id="volume-ativo"></i>
+            </div>
+
+            <div id="container-btn_desistir">
+                <button id="btn-desistir" class="btn-game">Desistir</button>
+            </div>
+
+            <div id="container-btn_chutar">
+                <button id="btn-chute" class="btn-game">Enviar Chute</button>
+            </div>
+
+            <div id="container-letras_erradas">
+                <div></div>
+            </div>
+        </div>
+
+        <section id="telas">
+            <div id="container-tela">
+                <h2>Você perdeu!</h2>
+
+                <p>Parece que o tempo acabou e você não desvendou a palavra. A palavra era <span id="palavra-certa"></span></p>
+
+                <img src="./img/loser-2.png" alt="">
+
+                <button>Recomeçar</button>
+            </div>
+        </section>
+
+        <section class="container-tela-letra_errada">
+            <p></p>
+            <img src="./img/warning.png" alt="">
+        </section>
+
+        <section class="bloco-msg-ultima_chance"></section>
+    </section>
+
+    <script src="./codigo/main-script.js"></script>
+</body>
+</html>
