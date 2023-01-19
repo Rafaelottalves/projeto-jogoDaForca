@@ -130,7 +130,7 @@ function executar() {
     })(blocoMenu)
 
     let contador = (() => {
-        let minuto = 3
+        let minuto = 2
         let segundo = 00
 
         let interval = setInterval(function() {
