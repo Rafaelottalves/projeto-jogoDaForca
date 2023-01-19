@@ -34,8 +34,20 @@ function executar() {
     let blocoMsg = document.querySelector('.bloco-msg-ultima_chance')
 
     let palavras = [
-        {tema: 'Animal', tipo: ['baleia','caranguejo', 'elefante', 'flamingo', 'gato', 'hipopótamo']},
-        {tema: 'Pais', tipo: ['Afeganistão', 'Bélgica', 'Brasil', 'Camarões', 'Emirados Árabes Unidos']}
+        {tema: 'Animal', tipo: ['abelha', 'abutre', 'ácaro', 'águia, albatroz', 'alce', 'alpaca', 'anaconda', 'anchova', 'andorinha', 'anta', 'antílope', 'aranha', 'arara', 'asno', 'atum', 'avestruz', 'baiacu', 'baleia', 'barata', 'barracuda', 'beija-flor', 'besouro', 'bem-te-vi', 'bezerro', 'capivara', 'caracol', 'caranguejo', 'carneiro', 'carrapato', 'cascavel', 'castor', 'cavalo', 'enguia', 'escaravelho', escorpião, 'faisão', 'falcão', 'flamingo', 'foca', 'formiga', 'gafanhoto', 'gaivota', 'galinha', 'galo', 'gambá', 'hamster', 'harpia', 'hiena', 'hipopótamo', 'jaguar', 'jamanta', 'jararaca', 'javali', 'lacraia', 'lagarta', 'lagartixa', 'lagosta', 'lampreia', 'leão', 'leão-marinho', 'lebre', 'lêmure', 'leopardo', 'lesma', 'macaco', 'mamute', 'marimbondo', 'mariposa', 'marisco', 'marmota', 'marreco', 'marta', 'onça', 'panda', 'pantera', 'apagaio', 'pardal', 'pato', 'pavão', 'peixe', 'peixe-boi', 'pelicano', 'raposa', 'ratazana', 'rato', 'sagui', 'salamandra', 'salmão', 'sanguessuga', 'sapo', 'sardinha', 'tainha', 'tamanduá', 'tarântula', 'tartaruga', 'tatu', 'texugo', 'tigre', 'tilápia', 'urso', 'urubu', 'urso panda', 'vaca', 'vaga-lume', 'veado', 'vespa', 'víbora', 'zebra']},
+
+        {tema: 'Pais', tipo: ['África do Sul', 'Egito', 'Serra Leoa', 'Angola', 'Marrocos', 'Argélia', 'Etiópia', 'Tunísia', 'Somália', 'Moçambique', 'Gana', 'Sudão', 'Guiné', 'Sudão do Sul', 'Cabo Verde', 'Nigéria', 'Uganda', 'Camarões', 'Tanzânia', 'Libéria', 'Congo', 'Costa do Marfim', 'Madagáscar', 'Senegal', 'Colômbia', 'República Dominicana', 'Argentina', 'Costa Rica', 'Haiti', 'Santa Lúcia', 'Bahamas', 'Cuba', 'Barbados', 'Jamaica', 'El Salvador', 'México', 'Suriname', 'Bolívia', 'Equador', 'Nicarágua', 'Brasil', 'Estados Unidos', 'Panamá', 'Uruguai', 'Canadá', 'Granada', 'Paraguai', 'Venezuela', 'Chile', 'Guatemala', 'Peru', 'Afeganistão', 'Coreia do Norte', 'Jordânia', 'Arábia Saudita', 'Coreia do Sul', 'Síria', 'Bangladesh', 'Filipinas', 'Líbano', 'Malásia', 'Tailândia', 'Butão', 'Índia', 'Maldivas', 'Timor-Leste', 'Camboja', 'Indonésia', 'Turquia', 'Catar', 'Irã', 'Mongólia', 'Turcomenistão', 'Cazaquistão', 'Iraque', 'Nepal', 'Uzbequistão', 'China', 'Israel', 'Vietnã', 'Cingapura', 'Japão', 'Paquistão', 'Quirguistão', 'Albânia', 'Dinamarca', 'Itália', 'Polônia', 'Alemanha', 'Eslováquia', 'Letônia', 'Portugal', 'Andorra', 'Eslovênia', 'Reino Unido', 'Armênia', 'Espanha', 'Lituânia', 'República Tcheca', 'Áustria', 'Estônia', 'Luxemburgo', 'Romênia', 'Azerbaijão', 'Finlândia', 'Macedônia', 'Rússia', 'França', 'San Marino', 'Bélgica', 'Geórgia', 'Sérvia', 'Grécia', 'Mônaco', 'Suécia', 'Bulgária', 'Hungria', 'Montenegro', 'Suíça', 'Irlanda', 'Noruega', 'Ucrânia', 'Croácia', 'Islândia', 'Países Baixos', 'Austrália', 'Kiribati', 'Tuvalu', 'Micronésia', 'Vanuatu', 'Ilhas Marshall', 'Nauru', 'Samoa', 'Ilhas Salomão', 'Nova Zelândia', 'Tonga']},
+
+        {tema: 'Estado', tipo: ['Acre', 'Alagoas', 'Amapá', 'Amazonas', 'Bahia', 'Ceará', 'Distrito Federal', 'Espírito Santo', 'Goiás', 'Maranhão', 'Mato Grosso', 'Mato Grosso do Sul', 'Minas Gerais', 'Pará', 'Paraíba', 'Paraná', 'Pernambuco', 'Piauí', 'Rio de Janeiro', 'Rio Grande do Norte', 'Rio Grande do Sul', 'Rondônia', 'Roraima', 'Santa Catarina', 'São Paulo', 'Sergipe', 'Tocantins', 'Alabama', 'Alasca', 'Arcansas', 'Arizona', 'Califórnia', 'Carolina do Norte', 'Carolina do Sul', 'Colorado', 'Connecticut', 'Dakota do Norte', 'Dakota do Sul', 'Delaware', 'Flórida', 'Geórgia', 'Havaí', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana',  'Maine','Maryland','Massachusetts','Michigan','Minesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey','Nova Iorque','Novo México','Oklahoma','Ohio','Oregon','Pennsylvania','Rhode Island','Tennessee', 'Texas','Utah','Vermont','Virginia', 'Virgínia Ocidental','Washington','Wisconsin',]},
+
+        {tema: 'Fruta', tipo: ['Abacate', 'Abacaxi', 'Açaí', 'Acerola', 'Ameixa', 'Amêndoa', 'Amora', 'Banana', 'Cacau', 'Caju', 'Carambola', 'Castanha', 'Cereja', 'Coco', 'Cupuaçu', 'Damasco', 'Figo',
+        'Framboesa', 'Goiaba', 'Graviola', 'Guaraná', 'Jabuticaba',
+        'Jaca', 'Kiwi', 'Laranja', 'Limão', 'Maçã', 'Mamão', 'Manga', 'Maracujá', 'elancia', 'Melão', 'Mirtilo',
+        'Morango', 'Noz', 'Pera', 'Pêssego', 'Pitanga', 'Pinha', 'Quiuí', 'Tangerina', 'Tamarindo', 'Uva', ]}, 
+
+        {tema: 'Nome', tipo: ['Maria','José', 'Antônio', 'João', 'Francisco', 'Ana', 'Luiz', 'Paulo', 'Carlos', 'Manoel', 'Pedro', 'Francisca', 'Marcos', 'Raimundo', 'Sebastião', 'Antônia', 'Marcelo', 'Jorge', 'Márcia', 'Geraldo', 'Adriana', 'Sandra', 'Luis', 'Fernando', 'Fabio', 'Roberto', 'Márcio', 'Edson', 'André', 'Sérgio', 'Josefa', 'Patrícia', 'Daniel', 'Rodrigo', 'Rafael', 'Joaquim', 'Vera', 'Ricardo', 'Eduardo', 'Terezinha', 'Sônia', 'Alexandre', 'Rita', 'Luciana', 'Cláudio', 'Rosa', 'Benedito', 'Leandro', 'Raimunda', 'Mário']},
+
+        {tema: 'Cor', tipo: ['vermelho', 'azul', 'amarelo', 'verde', 'laranja', 'roxo', 'Branco', 'Preto', 'Cinza', 'Prata', 'Marrom', 'rosa']}
     ]
 
     let posTema = Math.floor(Math.random() * palavras.length)
@@ -118,7 +130,7 @@ function executar() {
     })(blocoMenu)
 
     let contador = (() => {
-        let minuto = 1
+        let minuto = 3
         let segundo = 00
 
         let interval = setInterval(function() {
@@ -372,4 +384,3 @@ function executar() {
 }
 
 btnComecar.addEventListener('click', executar)
-// ver se ja terminou tudo, dar uma arrumada no css ou codigo caso seja necessario e partir pro modelo de cell | botar sons
